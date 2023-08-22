@@ -465,3 +465,25 @@ margin-bottom: 73px;
 .inner-footer {
     margin-top: -128px;
 }
+
+/* welcome page*/
+
+.welcome {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/bg.png) center bottom / cover no-repeat;
+}
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.central__logo {
+    margin-bottom: 65 px;
+}
