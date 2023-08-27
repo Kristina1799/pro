@@ -62,6 +62,7 @@ margin-bottom: 20px;
 }
 .menu__list{
     display: flex;
+    margin-top: 15px;
 }
 .menu__item {
     margin-right: 50px;
@@ -96,9 +97,6 @@ font-weight: 400;
 .contacts{
     text-align: right;
 }
-.button__order{
-    padding: 18px 30px;
-}
 .button{
     background: #FF5500;
     border-radius: 35px;
@@ -121,6 +119,9 @@ font-weight: 400;
 }
 .button:hover{
     background: #FF3D00;
+}
+.button__order{
+    padding: 18px 37px;
 }
 .preview{
     text-align: center;
@@ -281,15 +282,18 @@ font-weight: 400;
     height: 505;
     background-image: url("./cameraman.png") center center / cover no-repeat;
 }
+.about__img {
+    width: 490px;
+    height: 505px;
+}
 .about__content{
     background: #FFFFFF;
     width: 786px;
-    height: 455px;
     border-radius: 5px;
     vertical-align: top;
     margin-top: 98px;
     margin-left: -141px;
-    padding: 70px 81px;
+    padding: 67px 81px;
 }
 .about__title{
     font-weight: 800;
@@ -306,17 +310,20 @@ font-weight: 400;
     width: 502px;
 }
 .about__button{
-    margin-top: 60px;
+    margin-top: 43px;
+    margin-bottom: 18px;
+    width: 168px;
+    height: 35px;
 }
 .footer{
     height: 152px;
     margin-bottom: 79px;
     margin-top: 65px;
 }
-.container__footer{
+.container__footer__1{
     display: flex;
     justify-content: space-between;
-    margin-top: 87px;
+    margin-top: 99px;
 }
 .blok1{
     display: flex;
@@ -326,7 +333,6 @@ font-weight: 400;
 }
 .menu__footer{
 margin-left: 127px;
-margin-top: 15px;
 }
 
 .socials__item{
@@ -400,15 +406,15 @@ margin-right: 0;
 .services {
     display: flex;
     flex-direction: column;
+    padding-top: 91px;
 }
 .services__img {
     width: 41%;
-    margin-right: 7%;
+    margin-right: 4%;
 }
 .services__item {
-    height: 333px;
+    display: flex;
     flex-direction: row;
-    padding: 94px 0;
     margin-bottom: 51px;
 }
 .services__content {
@@ -420,12 +426,13 @@ margin-right: 0;
     font-weight: 700;
     color: #000000;
     margin-bottom: 28.5px;
+    margin-top: 12px;
 }
 .services__button {
-    margin-top: 34.5px;
+    margin-top: 60px;
 }
 .paginator-services {
-    margin-top: 107px;
+    margin-top: 12px;
     padding-bottom: 85px;
 }
 .paginator__link--services {
@@ -462,8 +469,10 @@ margin-bottom: 73px;
 .partners__item:hover {
     filter: grayscale(0);
 }
-.inner-footer {
-    margin-top: -128px;
+.container__footer__services{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
 }
 
 /* welcome page*/
@@ -483,7 +492,36 @@ margin-bottom: 73px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1128px;
+    height: 643px;
+    margin-top: 59px;
+    background: url(./img/rec.png) center / cover no-repeat;
+
 }
-.central__logo {
-    margin-bottom: 65 px;
+.central--video{
+    margin-top: 221px;
+}
+.button__welcome {
+    padding: 34px 190px;
+}
+
+.central--video {
+    opacity: 0;
+    animation: rotatein .9s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotatein {
+    form {
+        transform: scale(0.1) rotate(30deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    70% {
+        transform: rotate(3deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
